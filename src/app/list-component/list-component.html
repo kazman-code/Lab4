@@ -1,0 +1,23 @@
+<p>list-component works!</p>
+
+<ul>
+    <li>*ngFor="let president of president>"
+        {{presidents}}
+    </li>
+
+</ul>
+
+<ol>
+    @for(president of presidents; track president){
+        <li>{{presidents}}</li>
+    }
+</ol>
+
+<ul>
+@for(p of mypresidents;track p.name){
+    <li>{{p.name}},{{p.term}}/li>
+}
+
+</ul>
+
+
