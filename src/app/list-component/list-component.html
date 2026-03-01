@@ -1,7 +1,9 @@
 
 <ul>
-    <li>*ngFor="let president of president>"
-        {{presidents}} </li>
+  <!--loops through the simple presidents array
+  *ngFor repeats for each name in array-->
+    <li *ngFor="let president of president>"
+        {{president}} </li>
 
 </ul>
 
@@ -12,8 +14,9 @@
 </ol>-->
 
 <ul>
+  <!-- loops through mypresidnts array of objects-->
 @for(p of mypresidents;track p.name){
-    <li>{{p.name}},{{p.term}}/li>
+    <li>{{p.name}},{{p.term}}</li>
 }
 
 </ul>
